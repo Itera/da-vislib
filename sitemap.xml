@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://itera.github.io/da-vislib/</loc>
+         <lastmod>2021-12-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://itera.github.io/da-vislib/api/</loc>
+         <lastmod>2021-12-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://itera.github.io/da-vislib/changelog/</loc>
+         <lastmod>2021-12-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://itera.github.io/da-vislib/contributing/</loc>
+         <lastmod>2021-12-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://itera.github.io/da-vislib/installation/</loc>
+         <lastmod>2021-12-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://itera.github.io/da-vislib/usage/</loc>
+         <lastmod>2021-12-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
