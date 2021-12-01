@@ -1,7 +1,7 @@
 site_name: da-vislib
-site_url: https://henriklg.github.io/da-vislib
-repo_url: https://github.com/henriklg/da-vislib
-repo_name: henriklg/da-vislib
+site_url: https://itera.github.io/da-vislib
+repo_url: https://github.com/itera/da-vislib
+repo_name: itera/da-vislib
 #strict: true
 nav:
   - Home: index.md
@@ -63,7 +63,7 @@ extra:
       link: https://github.com/waynerv/cookiecutter-pypackage
       name: Facebook
     - icon: fontawesome/brands/github
-      link: https://github.com/henriklg/da-vislib
+      link: https://github.com/itera/da-vislib
       name: Github
     - icon: material/email
       link: "mailto:henrik.gjestang@itera.com"
