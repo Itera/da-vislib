@@ -32,6 +32,12 @@ coverage:
 pre-commit:
 	pre-commit run --all-files
 
+env:
+	poetry install -E doc -E dev -E test
+
+clean-env:
+	-$(RM) .venv
+
 clean:
 	@echo Clean project
 	-$(RM) .coverage, coverage.xml
