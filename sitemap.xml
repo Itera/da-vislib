@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://itera.github.io/da-vislib/pypi_release_checklist/</loc>
+         <lastmod>2021-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://itera.github.io/da-vislib/usage/</loc>
          <lastmod>2021-12-06</lastmod>
          <changefreq>daily</changefreq>
