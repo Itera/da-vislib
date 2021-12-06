@@ -13,7 +13,7 @@ nav:
 theme:
   name: material
   language: en
-  #logo: assets/logo.png
+  logo: assets/logo.png
   palette:
     scheme: preference
     primary: indigo
@@ -54,17 +54,19 @@ plugins:
         - da-vislib
 extra:
   social:
+    # Twitter
     - icon: fontawesome/brands/twitter
-      # replace with your own tweet link below
-      link: https://github.com/waynerv/cookiecutter-pypackage
+      link: https://twitter.com/iteraasa
       name: Tweet
+    # Facebook
     - icon: fontawesome/brands/facebook
-      # replace with your own facebook link below
-      link: https://github.com/waynerv/cookiecutter-pypackage
+      link: https://facebook.com/iteraction/
       name: Facebook
+    # GitHub
     - icon: fontawesome/brands/github
-      link: https://github.com/itera/da-vislib
+      link: https://github.com/itera
       name: Github
+    # Mail
     - icon: material/email
       link: "mailto:henrik.gjestang@itera.com"
   # to enable disqus, uncomment the following and put your disqus id below

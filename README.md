@@ -69,7 +69,7 @@ optionally, if make is installed set up the environment with '`make env`'
 8. Check the PyPI listing page to make sure that the README, release notes, and roadmap display properly. If tox test passed, this should be ok, since we have already run twine check during tox test.
 9. Update documentation:
    ```
-   mkdocs gh-deploy
+   poetry run mkdocs gh-deploy
    ```
 
 
