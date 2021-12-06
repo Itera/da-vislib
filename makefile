@@ -32,6 +32,9 @@ coverage:
 pre-commit:
 	pre-commit run --all-files
 
+docs:
+	poetry run mkdocs gh-deploy
+
 env:
 	poetry install -E doc -E dev -E test
 
