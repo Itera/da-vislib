@@ -9,6 +9,7 @@ nav:
   - Usage: usage.md
   - Modules: api.md
   - Contributing: contributing.md
+  - Release Checklist: pypi_release_checklist.md
   - Changelog: changelog.md
 theme:
   name: material
