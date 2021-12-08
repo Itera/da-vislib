@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.1 (2021-12-08)
+## 0.2.0 (2021-12-08)
 
 * New feature (testing purposes): hello_world()
 *
