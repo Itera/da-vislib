@@ -253,33 +253,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#for-developers" class="md-nav__link">
-    For developers
-  </a>
-  
-    <nav class="md-nav" aria-label="For developers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#set-up-environment" class="md-nav__link">
-    Set up environment:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploy-checklist-for-every-release" class="md-nav__link">
-    Deploy checklist (for every release):
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#credits" class="md-nav__link">
     Credits
   </a>
@@ -434,33 +407,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#for-developers" class="md-nav__link">
-    For developers
-  </a>
-  
-    <nav class="md-nav" aria-label="For developers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#set-up-environment" class="md-nav__link">
-    Set up environment:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploy-checklist-for-every-release" class="md-nav__link">
-    Deploy checklist (for every release):
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#credits" class="md-nav__link">
     Credits
   </a>
@@ -497,7 +443,7 @@
 <a href="https://pypi.org/project/da-vislib/"><img alt="python" src="https://img.shields.io/pypi/pyversions/da-vislib.svg" /></a>
 <a href="https://github.com/itera/da-vislib/actions/workflows/dev.yml"><img alt="Build Status" src="https://github.com/itera/da-vislib/actions/workflows/dev.yml/badge.svg" /></a>
 <a href="https://codecov.io/github/itera/da-vislib"><img alt="codecov" src="https://codecov.io/gh/itera/da-vislib/branch/main/graphs/badge.svg" /></a></p>
-<p>Skeleton for D&amp;A's new visualizations library.</p>
+<p>Skeleton for D&amp;A's new visualizations library. Placeholder for description to come at a later point.</p>
 <ul>
 <li>Documentation: <a href="https://itera.github.io/da-vislib">https://itera.github.io/da-vislib</a></li>
 <li>GitHub: <a href="https://github.com/itera/da-vislib">https://github.com/itera/da-vislib</a></li>
@@ -510,43 +456,6 @@
 </ul>
 <h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
 <p><code>pip install da-vislib</code></p>
-<h3 id="for-developers">For developers<a class="headerlink" href="#for-developers" title="Permanent link">&para;</a></h3>
-<p>Requirements:
-- pyenv (with python3)
-- poetry
-- make (optional)</p>
-<h4 id="set-up-environment">Set up environment:<a class="headerlink" href="#set-up-environment" title="Permanent link">&para;</a></h4>
-<p>Poetry will create its own virtualenv isolated from your system and install the dependencies in it. We installed extra dependency need by developer with -E {group} options, such as documentation build tools, lint, formatting and test tools etc.
-<div class="highlight"><pre><span></span><code>poetry install -E doc -E dev -E test
-</code></pre></div>
-optionally, if make is installed set up the environment with '<code>make env</code>'</p>
-<h4 id="deploy-checklist-for-every-release">Deploy checklist (for every release):<a class="headerlink" href="#deploy-checklist-for-every-release" title="Permanent link">&para;</a></h4>
-<ol>
-<li>Make some pull requests, merge all changes from feature branch to master/main.</li>
-<li>Update CHANGELOG.md manually. Make sure it follows the <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a> standard. Be noticed that GitHub workflow will read changelog and extract release notes automatically.</li>
-<li>Commit the changelog changes:
-   <div class="highlight"><pre><span></span><code>1. git add CHANGELOG.md
-2. git commit -m &quot;Changelog for upcoming release 0.1.1.&quot;
-</code></pre></div></li>
-<li>Update version number and automatically create a commit, tag (can also be patch or major):
-   <div class="highlight"><pre><span></span><code>poetry run bump2version minor
-</code></pre></div></li>
-<li>Run local tests for insurance:
-   <div class="highlight"><pre><span></span><code>poetry run tox
-</code></pre></div></li>
-<li>Push these commits to main:
-   <div class="highlight"><pre><span></span><code>git push
-</code></pre></div>
-   Before proceeding to the next step, please check workflows triggered by this push have passed.</li>
-<li>Push the tags (created by bump2version) to main, creating the new release on both GitHub and PyPI:
-   <div class="highlight"><pre><span></span><code>git push --tags
-</code></pre></div>
-   Only tag name started with 'v'(lower case) will leverage GitHub release workflow.</li>
-<li>Check the PyPI listing page to make sure that the README, release notes, and roadmap display properly. If tox test passed, this should be ok, since we have already run twine check during tox test.</li>
-<li>Update documentation:
-   <div class="highlight"><pre><span></span><code>poetry run mkdocs gh-deploy
-</code></pre></div></li>
-</ol>
 <h3 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h3>
 <p>This package was created with <a href="https://github.com/audreyr/cookiecutter">Cookiecutter</a> and the <a href="https://github.com/waynerv/cookiecutter-pypackage">waynerv/cookiecutter-pypackage</a> project template.</p>
 <!-- END INCLUDE -->
