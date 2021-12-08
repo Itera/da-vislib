@@ -55,7 +55,7 @@ Ready to contribute? Here's how to set up `da-vislib` for local development.
     $ git clone git@github.com:your_name_here/da-vislib.git
     ```
 
-3. Ensure [poetry](https://python-poetry.org/docs/) is installed.
+3. Ensure [poetry](https://python-poetry.org/docs/) and [pyenv](https://github.com/pyenv-win/pyenv-win) is installed.
 4. Install dependencies and start your virtualenv:
 
     ```
