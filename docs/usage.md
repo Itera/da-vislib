@@ -2,6 +2,6 @@
 
 To use da-vislib in a project
 
-```
-import da_vislib
-```
+> ``` python
+> import da_vislib
+> ```

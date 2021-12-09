@@ -9,7 +9,7 @@ You can contribute in many ways:
 
 ### Report Bugs
 
-Report bugs at https://github.com/itera/da-vislib/issues.
+Report bugs at [GitHub Issues](https://github.com/itera/da-vislib/issues).
 
 If you are reporting a bug, please include:
 
@@ -35,7 +35,7 @@ articles, and such.
 
 ### Submit Feedback
 
-The best way to send feedback is to file an issue at https://github.com/itera/da-vislib/issues.
+The best way to send feedback is to file an issue at [GitHub Issues](https://github.com/itera/da-vislib/issues).
 
 If you are proposing a feature:
 
@@ -51,41 +51,44 @@ Ready to contribute? Here's how to set up `da-vislib` for local development.
 1. Fork the `da-vislib` repo on GitHub.
 2. Clone your fork locally
 
-    ```
-    $ git clone git@github.com:your_name_here/da-vislib.git
-    ```
+    > ``` bash
+    > git clone git@github.com:your_name_here/da-vislib.git
+    > ```
 
-3. Ensure [Poetry](https://python-poetry.org/docs/) and [Pyenv](https://github.com/pyenv-win/pyenv-win) is installed (see this [section](##installing-pyenv-and-poetry) for instructions). Skip if already installed.
+3. Ensure [Poetry](https://python-poetry.org/docs/) and
+   [Pyenv](https://github.com/pyenv-win/pyenv-win) is installed
+   (see this [section](#installing-pyenv-and-poetry) for instructions). Skip if already installed.
+
 4. Install dependencies and start your virtualenv:
 
-    ```
-    $ poetry install -E test -E doc -E dev
-    ```
+    > ``` bash
+    > poetry install -E test -E doc -E dev
+    > ```
 
 5. Create a branch for local development:
 
-    ```
-    $ git checkout -b name-of-your-bugfix-or-feature
-    ```
+    > ``` bash
+    > git checkout -b name-of-your-bugfix-or-feature
+    > ```
 
     Now you can make your changes locally.
 
 6. When you're done making changes, check that your changes pass the
    tests, including testing other Python versions, with tox:
 
-    ```
-    $ poetry run tox
-    ```
+    > ``` bash
+    > poetry run tox
+    > ```
 
 7. Commit your changes and push your branch to GitHub:
 
-    ```
-    $ git add .
-    $ git commit -m "Your detailed description of your changes."
-    $ git push origin name-of-your-bugfix-or-feature
-    ```
+    > ``` bash
+    > git add .
+    > git commit -m "Your detailed description of your changes."
+    > git push origin name-of-your-bugfix-or-feature
+    > ```
 
-8. Submit a pull request through the GitHub website.
+8.  Submit a pull request through the GitHub website.
 
 ## Pull Request Guidelines
 
@@ -96,7 +99,7 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in README.md.
 3. The pull request should work for Python 3.6, 3.7, 3.8 and 3.9. Check
-   https://github.com/itera/da-vislib/actions
+   [GitHub Actions](https://github.com/itera/da-vislib/actions)
    and make sure that the tests pass for all supported Python versions.
 
 ## Semantic Commit Messages Guidelines
@@ -133,19 +136,24 @@ More Examples:
 
 References:
 
-- https://www.conventionalcommits.org/
-- https://seesparkbox.com/foundry/semantic_commit_messages
-- http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+- [https://www.conventionalcommits.org/](https://www.conventionalcommits.org/)
+- [https://seesparkbox.com/foundry/semantic_commit_messages](https://seesparkbox.com/foundry/semantic_commit_messages)
+- [http://karma-runner.github.io/1.0/dev/git-commit-msg.html](http://karma-runner.github.io/1.0/dev/git-commit-msg.html)
 
 
 ## Tips
 
-```
-$ poetry run pytest tests/test_da_vislib.py
-```
+> ``` bash
+> poetry run pytest tests/test_da_vislib.py
+> ```
 
-To run a subset of tests.
+To run a subset of tests. Or
 
+> ``` bash
+> poetry run python -m pytest --pyargs da_vislib tests/
+> ```
+
+To run all tests.
 
 ## Deploying
 
@@ -154,11 +162,11 @@ see the 'Release Checklist'.
 Make sure all your changes are committed (including an entry in CHANGELOG.md).
 Then run:
 
-```
-$ poetry run bump2version patch # possible: major / minor / patch
-$ git push
-$ git push --tags
-```
+> ``` bash
+> poetry run bump2version patch # possible: major / minor / patch
+> git push
+> git push --tags
+> ```
 
 GitHub Actions will then deploy to PyPI if tests pass.
 

@@ -47,7 +47,7 @@
     we have already run twine check during tox test.
 
 8. Update documentation:
-   ```
-   poetry run mkdocs gh-deploy
-   ```
+   > ``` bash
+   > poetry run mkdocs gh-deploy
+   > ```
 

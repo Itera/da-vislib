@@ -22,7 +22,9 @@ Skeleton for D&A's new visualizations library. Placeholder for description to co
 
 
 ## Installation
-`pip install da-vislib`
+> ``` bash
+> pip install da-vislib
+> ```
 
 
 ## Credits
