@@ -644,7 +644,9 @@ articles, and such.</p>
 </code></pre></div>
 </li>
 <li>
-<p>Ensure <a href="https://python-poetry.org/docs/">Poetry</a> and <a href="https://github.com/pyenv-win/pyenv-win">Pyenv</a> is installed (see this <a href="##installing-pyenv-and-poetry">section</a> for instructions). Skip if already installed.</p>
+<p>Ensure <a href="https://python-poetry.org/docs/">Poetry</a> and
+   <a href="https://github.com/pyenv-win/pyenv-win">Pyenv</a> is installed
+   (see this <a href="#installing-pyenv-and-poetry">section</a> for instructions). Skip if already installed.</p>
 </li>
 <li>
 <p>Install dependencies and start your virtualenv:</p>
@@ -719,7 +721,10 @@ which makes it easier to write automated tools on top of.</p>
 <h3 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>$ poetry run pytest tests/test_da_vislib.py
 </code></pre></div>
-<p>To run a subset of tests.</p>
+<p>To run a subset of tests. Or</p>
+<div class="highlight"><pre><span></span><code>$ poetry run python -m pytest --pyargs da_vislib tests/
+</code></pre></div>
+<p>To run all tests.</p>
 <h3 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h3>
 <p>A reminder for the maintainers on how to deploy. For more in depth instructions,
 see the 'Release Checklist'.
