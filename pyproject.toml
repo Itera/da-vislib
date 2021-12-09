@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "da-vislib"
-version = "0.2.0"
+version = "0.2.1"
 homepage = "https://github.com/itera/da-vislib"
 description = "Skeleton project created by Cookiecutter PyPackage."
 authors = ["Henrik Gjestang <henrik.gjestang@itera.com>"]
