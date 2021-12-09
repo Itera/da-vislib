@@ -83,7 +83,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://itera.github.io/da-vislib/" title="da-vislib" class="md-header-nav__button md-logo" aria-label="da-vislib">
       
-  <img src="../assets/logo_full.png" alt="logo">
+  <img src="../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -175,7 +175,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://itera.github.io/da-vislib/" title="da-vislib" class="md-nav__button md-logo" aria-label="da-vislib">
       
-  <img src="../assets/logo_full.png" alt="logo">
+  <img src="../assets/logo.png" alt="logo">
 
     </a>
     da-vislib
@@ -361,6 +361,26 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#semantic-commit-messages-guidelines" class="md-nav__link">
+    Semantic Commit Messages Guidelines
+  </a>
+  
+    <nav class="md-nav" aria-label="Semantic Commit Messages Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#tips" class="md-nav__link">
     Tips
   </a>
@@ -370,6 +390,13 @@
           <li class="md-nav__item">
   <a href="#deploying" class="md-nav__link">
     Deploying
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-pyenv-and-poetry" class="md-nav__link">
+    Installing PyEnv and Poetry
   </a>
   
 </li>
@@ -510,6 +537,26 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#semantic-commit-messages-guidelines" class="md-nav__link">
+    Semantic Commit Messages Guidelines
+  </a>
+  
+    <nav class="md-nav" aria-label="Semantic Commit Messages Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#tips" class="md-nav__link">
     Tips
   </a>
@@ -519,6 +566,13 @@
           <li class="md-nav__item">
   <a href="#deploying" class="md-nav__link">
     Deploying
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-pyenv-and-poetry" class="md-nav__link">
+    Installing PyEnv and Poetry
   </a>
   
 </li>
@@ -590,7 +644,7 @@ articles, and such.</p>
 </code></pre></div>
 </li>
 <li>
-<p>Ensure <a href="https://python-poetry.org/docs/">poetry</a> and <a href="https://github.com/pyenv-win/pyenv-win">pyenv</a> is installed.</p>
+<p>Ensure <a href="https://python-poetry.org/docs/">Poetry</a> and <a href="https://github.com/pyenv-win/pyenv-win">Pyenv</a> is installed (see this <a href="##installing-pyenv-and-poetry">section</a> for instructions). Skip if already installed.</p>
 </li>
 <li>
 <p>Install dependencies and start your virtualenv:</p>
@@ -631,12 +685,44 @@ $ git push origin name-of-your-bugfix-or-feature
    https://github.com/itera/da-vislib/actions
    and make sure that the tests pass for all supported Python versions.</li>
 </ol>
+<h3 id="semantic-commit-messages-guidelines">Semantic Commit Messages Guidelines<a class="headerlink" href="#semantic-commit-messages-guidelines" title="Permanent link">&para;</a></h3>
+<p>The Conventional Commits specification is a lightweight convention on top of commit messages.
+It provides an easy set of rules for creating an explicit commit history;
+which makes it easier to write automated tools on top of.</p>
+<p>Format: <code>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;</code></p>
+<p><code>&lt;scope&gt;</code> is optional (ie. <parser>, <logging>, <langugage>)</p>
+<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>feat: add hat wobble
+^--^  ^------------^
+|     |
+|     +-&gt; Summary in present tense.
+|
++-------&gt; Type: chore, docs, feat, fix, refactor, style, or test.
+</code></pre></div>
+<p>More Examples:</p>
+<ul>
+<li><code>feat</code>: (new feature for the user, not a new feature for build script)</li>
+<li><code>fix</code>: (bug fix for the user, not a fix to a build script)</li>
+<li><code>docs</code>: (changes to the documentation)</li>
+<li><code>style</code>: (formatting, missing semi colons, etc; no production code change)</li>
+<li><code>refactor</code>: (refactoring production code, eg. renaming a variable)</li>
+<li><code>test</code>: (adding missing tests, refactoring tests; no production code change)</li>
+<li><code>chore</code>: (updating grunt tasks etc; no production code change)</li>
+<li><code>revert</code>: (reverting a commit)</li>
+</ul>
+<p>References:</p>
+<ul>
+<li>https://www.conventionalcommits.org/</li>
+<li>https://seesparkbox.com/foundry/semantic_commit_messages</li>
+<li>http://karma-runner.github.io/1.0/dev/git-commit-msg.html</li>
+</ul>
 <h3 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>$ poetry run pytest tests/test_da_vislib.py
 </code></pre></div>
 <p>To run a subset of tests.</p>
 <h3 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h3>
-<p>A reminder for the maintainers on how to deploy.
+<p>A reminder for the maintainers on how to deploy. For more in depth instructions,
+see the 'Release Checklist'.
 Make sure all your changes are committed (including an entry in CHANGELOG.md).
 Then run:</p>
 <div class="highlight"><pre><span></span><code>$ poetry run bump2version patch # possible: major / minor / patch
@@ -644,6 +730,8 @@ $ git push
 $ git push --tags
 </code></pre></div>
 <p>GitHub Actions will then deploy to PyPI if tests pass.</p>
+<h3 id="installing-pyenv-and-poetry">Installing PyEnv and Poetry<a class="headerlink" href="#installing-pyenv-and-poetry" title="Permanent link">&para;</a></h3>
+<p>TODO: add instructions for linux and windows</p>
 <!-- END INCLUDE -->
                 
               
