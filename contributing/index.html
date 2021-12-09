@@ -650,8 +650,10 @@ articles, and such.</p>
 <li>Fork the <code>da-vislib</code> repo on GitHub.</li>
 <li>
 <p>Clone your fork locally</p>
-<div class="highlight"><pre><span></span><code>$ git clone git@github.com:your_name_here/da-vislib.git
+<blockquote>
+<div class="highlight"><pre><span></span><code>git clone git@github.com:your_name_here/da-vislib.git
 </code></pre></div>
+</blockquote>
 </li>
 <li>
 <p>Ensure <a href="https://python-poetry.org/docs/">Poetry</a> and
@@ -660,27 +662,35 @@ articles, and such.</p>
 </li>
 <li>
 <p>Install dependencies and start your virtualenv:</p>
-<div class="highlight"><pre><span></span><code>$ poetry install -E test -E doc -E dev
+<blockquote>
+<div class="highlight"><pre><span></span><code>poetry install -E <span class="nb">test</span> -E doc -E dev
 </code></pre></div>
+</blockquote>
 </li>
 <li>
 <p>Create a branch for local development:</p>
-<div class="highlight"><pre><span></span><code>$ git checkout -b name-of-your-bugfix-or-feature
+<blockquote>
+<div class="highlight"><pre><span></span><code>git checkout -b name-of-your-bugfix-or-feature
 </code></pre></div>
+</blockquote>
 <p>Now you can make your changes locally.</p>
 </li>
 <li>
 <p>When you're done making changes, check that your changes pass the
    tests, including testing other Python versions, with tox:</p>
-<div class="highlight"><pre><span></span><code>$ poetry run tox
+<blockquote>
+<div class="highlight"><pre><span></span><code>poetry run tox
 </code></pre></div>
+</blockquote>
 </li>
 <li>
 <p>Commit your changes and push your branch to GitHub:</p>
-<div class="highlight"><pre><span></span><code>$ git add .
-$ git commit -m &quot;Your detailed description of your changes.&quot;
-$ git push origin name-of-your-bugfix-or-feature
+<blockquote>
+<div class="highlight"><pre><span></span><code>git add .
+git commit -m <span class="s2">&quot;Your detailed description of your changes.&quot;</span>
+git push origin name-of-your-bugfix-or-feature
 </code></pre></div>
+</blockquote>
 </li>
 <li>
 <p>Submit a pull request through the GitHub website.</p>
@@ -729,21 +739,27 @@ which makes it easier to write automated tools on top of.</p>
 <li>http://karma-runner.github.io/1.0/dev/git-commit-msg.html</li>
 </ul>
 <h3 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>$ poetry run pytest tests/test_da_vislib.py
+<blockquote>
+<div class="highlight"><pre><span></span><code>poetry run pytest tests/test_da_vislib.py
 </code></pre></div>
+</blockquote>
 <p>To run a subset of tests. Or</p>
-<div class="highlight"><pre><span></span><code>$ poetry run python -m pytest --pyargs da_vislib tests/
+<blockquote>
+<div class="highlight"><pre><span></span><code>poetry run python -m pytest --pyargs da_vislib tests/
 </code></pre></div>
+</blockquote>
 <p>To run all tests.</p>
 <h3 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h3>
 <p>A reminder for the maintainers on how to deploy. For more in depth instructions,
 see the 'Release Checklist'.
 Make sure all your changes are committed (including an entry in CHANGELOG.md).
 Then run:</p>
-<div class="highlight"><pre><span></span><code>$ poetry run bump2version patch # possible: major / minor / patch
-$ git push
-$ git push --tags
+<blockquote>
+<div class="highlight"><pre><span></span><code>poetry run bump2version patch <span class="c1"># possible: major / minor / patch</span>
+git push
+git push --tags
 </code></pre></div>
+</blockquote>
 <p>GitHub Actions will then deploy to PyPI if tests pass.</p>
 <h3 id="installing-pyenv-and-poetry">Installing PyEnv and Poetry<a class="headerlink" href="#installing-pyenv-and-poetry" title="Permanent link">&para;</a></h3>
 <p>TODO: add instructions for linux and windows</p>
