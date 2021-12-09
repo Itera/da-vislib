@@ -19,3 +19,11 @@ def test_content(response):
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
     del response
+
+
+def test_hello_world():
+    """Test that the hello world function works."""
+    import da_vislib.da_vislib as davis
+    x = davis.hello_world()
+    assert type(x) == str
+    assert x == 'Hello World!'
