@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2 (2021-12-09)
+
+* Many fixes in the documentation.
+* Updated some core packages for generating documentation.
+* Added an example with google docstrings and a test for the same function.
 
 ## 0.2.1 (2021-12-08)
 
